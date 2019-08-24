@@ -5,7 +5,11 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+#if DSEC_TEST
+#include "../../tests/builtins/builtins_list.h"
+#else
 #include "../builtins/builtins_list.h"
+#endif
 #include <dsec_ta_manage_object.h>
 #include <dsec_util.h>
 #include <user_ta_header_defines.h>
